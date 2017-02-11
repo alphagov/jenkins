@@ -156,6 +156,10 @@ module Jenkins
       file.close! if file
     end
 
+    def groovy_from_file!(path)
+      execute!("groovy #{path}")
+    end
+
     private
 
     #
